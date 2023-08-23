@@ -37,7 +37,7 @@ const swaggerOptions = {
     apis: ["./swagger.yaml"] // 要包含在Swagger文檔中的API文件的路徑
 };
 const specs = swaggerJsdoc(swaggerOptions);
-app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs));
+app.use("/swagger", swaggerUi.serve, swaggerUi.setup(specs));
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));

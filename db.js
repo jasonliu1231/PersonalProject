@@ -3,10 +3,10 @@ const { Pool } = require("pg");
 //連接PG資料庫
 async function connectpgdb() {
     let pool = new Pool({
-        user: process.env.sa_user,
-        host: process.env.sa_host,
-        database: process.env.sa_database,
-        password: process.env.sa_password,
+        user: 'lssrxfuu',
+        host: 'john.db.elephantsql.com',
+        database: 'lssrxfuu',
+        password: 'J_LIm4N9teC5CkLdH7lVXWL6sQHMiRqU',
         port: "5432"
     });
     try {
