@@ -34,7 +34,7 @@ const swaggerOptions = {
             description: "api文件"
         }
     },
-    apis: ["./swagger.yaml"] // 要包含在Swagger文檔中的API文件的路徑
+    apis: ["routes/index.js"] // 要包含在Swagger文檔中的API文件的路徑
 };
 const specs = swaggerJsdoc(swaggerOptions);
 app.use("/swagger", swaggerUi.serve, swaggerUi.setup(specs, { customCssUrl: CSS_URL }));

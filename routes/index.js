@@ -7,6 +7,40 @@ router.get("/", function (req, res, next) {
     res.render("index", { title: "Express" });
 });
 
+/**
+ * @swagger
+ * /login:
+ *   post:
+ *     summary: 登入
+ *     requestBody:
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               user:
+ *                 type: string
+ *                 example: 'jason'
+ *                 description: 使用者名稱
+ *               password:
+ *                 type: string
+ *                 example: 'a000000'
+ *                 description: 使用者密碼
+ *     responses:
+ *       200:
+ *         content:
+ *           text:
+ *             schema: 
+ *               type: string
+ *               example: 登入成功！
+ *       404:
+ *         content:
+ *           text:
+ *             schema:
+ *               type: string
+ *               example: 帳號密碼不存在！
+ */
+
 router.post("/login", async function (req, res, next) {
     const { user, password } = req.body;
     console.log(user, password)
