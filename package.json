@@ -15,7 +15,7 @@
     "morgan": "~1.9.1",
     "pg": "^8.11.3",
     "swagger-jsdoc": "^6.2.8",
-    "swagger-ui-express": "^5.0.0",
+    "swagger-ui-express": "^4.3.0",
     "vary": "^1.1.2"
   }
 }
